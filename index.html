@@ -1,79 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi Portafolio</title>
     <meta charset="UTF-8">
+    <title>Portafolio - Axel Díaz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f6f9;
             color: #333;
+            line-height: 1.6;
         }
-        h1 {
-            color: #1f3c88;
+
+        header {
+            background: linear-gradient(135deg, #1f3c88, #2a5298);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
         }
+
+        nav {
+            background-color: #162447;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
         h2 {
-            margin-top: 40px;
+            color: #1f3c88;
+            margin-bottom: 15px;
+        }
+
+        h3 {
             color: #2a5298;
         }
-        h3 {
-            color: #444;
-        }
+
         pre {
-            background-color: #eaeaea;
+            background-color: #f0f0f0;
             padding: 15px;
-            border-radius: 5px;
+            border-radius: 6px;
+            overflow-x: auto;
         }
-        .card {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
+
+        footer {
+            background-color: #162447;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>
 
 <body>
 
-<h1>Mi Portafolio Académico</h1>
+<header>
+    <h1>Portafolio Académico</h1>
+    <h2>Axel Díaz</h2>
+    <p>Ingeniería en Computación y Ciencias de la Información</p>
+</header>
 
-<div class="card">
-<h2>Acerca de mí</h2>
-<p>Me llamo Axel Díaz soy estudiante de Ingienería en Computación en Ciencias de la Información en la Universidad del Valle de Guatemala, estudie en el INBC (Instituto Nacional de Bachillerato en Computación,
-extendiendome un poco más, escuchar música es lo que más hago o leer ya sea mangas o literatura o sobre la vida de figuras importantes, entre a esta carrera porque siempre me ha parecido muy interesante la
-programación y las computadoras en general y algún día me gustaría trabajar de esto para alguna grande empresa o crear mi propio videojugo y que sea mínimamente éxitoso.</p>
-</div>
+<nav>
+    <a href="#acerca">Acerca de mí</a>
+    <a href="#primer-mes">Mi primer mes</a>
+    <a href="#aprendizajes">Aprendizajes</a>
+</nav>
 
-<div class="card">
-<h2>Mi primer mes en la universidad</h2>
-<p>Durante mi primer mes he experimentado un cambio importante en el nivel académico. He aprendido a organizar mejor mi tiempo y a enfrentar nuevos retos en programación y matemáticas pero mi primer mes fue 
-bastante agradable muchas personas muy respetuosas y agradbles y los profesores son muy buenos.</p>
-</div>
+<section id="acerca">
+    <div class="card">
+        <h2>Acerca de mí</h2>
+        <p>Me llamo Axel Díaz y soy estudiante de Ingeniería en Computación y Ciencias de la Información en la Universidad del Valle de Guatemala. Estudié en el INBC (Instituto Nacional de Bachillerato en Computación).</p>
 
-<div class="card">
-<h2>Mis aprendizajes en Computación</h2>
-<p>En los 3 meses que llevo en la unviersidad eh aprendido mucho más sobre Python lo cual es muy emocionante ya que ahora considero que puedo hacer muchas más cosas de las que creí que podría. Un ejemplo de las 
-primeras cosas que hicimos fue esta.</p>
+        <p>Entre mis intereses personales se encuentran escuchar música y leer, ya sea manga, literatura o biografías de figuras importantes. Siempre me ha interesado la programación y el funcionamiento de las computadoras en general, lo cual me motivó a elegir esta carrera.</p>
 
-<h3>1. Pensamiento lógico</h3>
-<p>He aprendido a estructurar problemas mediante algoritmos y pseudocódigo.</p>
+        <p>En el futuro me gustaría trabajar en una gran empresa tecnológica o incluso desarrollar mi propio videojuego y que sea exitoso.</p>
+    </div>
+</section>
 
-<h3>2. Programación básica</h3>
+<section id="primer-mes">
+    <div class="card">
+        <h2>Mi primer mes en la universidad</h2>
+        <p>Durante mi primer mes en la universidad experimenté un cambio importante en el nivel académico. La exigencia es mayor, especialmente en cursos como programación y matemáticas.</p>
+
+        <p>Sin embargo, ha sido una experiencia muy agradable. He conocido personas respetuosas y colaboradoras, y los profesores han demostrado ser profesionales y comprometidos con nuestra formación.</p>
+
+        <p>Este primer mes me ayudó a mejorar mi organización del tiempo y a asumir con mayor responsabilidad mis estudios. Aprendí que la disciplina y la constancia son claves para tener éxito en esta etapa académica.</p>
+    </div>
+</section>
+
+<section id="aprendizajes">
+    <div class="card">
+        <h2>Mis aprendizajes en Computación</h2>
+
+        <h3>1. Pensamiento lógico y algoritmos</h3>
+        <p>He aprendido a estructurar problemas mediante algoritmos y pseudocódigo, dividiendo situaciones complejas en pasos más pequeños y organizados.</p>
+
+        <p><strong>Reflexión:</strong> Antes me costaba organizar la solución de un problema. Ahora puedo analizarlo paso a paso y plantear una estrategia clara. Aún necesito practicar más ejercicios para mejorar mi rapidez y precisión.</p>
+
+        <h3>2. Programación básica en Python</h3>
+        <p>Durante estos meses he fortalecido mis conocimientos en Python, comprendiendo mejor el uso de variables, condicionales y estructuras de control.</p>
+
 <pre>
 numero = int(input("Ingrese un número: "))
+
 if numero % 2 == 0:
     print("Es par")
 else:
     print("Es impar")
 </pre>
 
-<h3>3. Introducción a la computación</h3>
-<p>En está clase he visto muchas cosas nuevas de las cosas que creí ya saber cosas como el SO de las computadoras que lo considero conocimiento básico aprendí nuvas cosas de ello lo cuál es impresionante
-saber que siempre hay algo más por aprender</p>
+        <p><strong>Reflexión:</strong> Este aprendizaje me permitió entender cómo una computadora toma decisiones. Ahora me siento más seguro escribiendo código básico, aunque todavía quiero mejorar en programas más complejos.</p>
 
-</div>
+        <h3>3. Introducción a la computación</h3>
+        <p>En este curso comprendí mejor el funcionamiento del sistema operativo, los componentes internos de la computadora y conceptos fundamentales que antes creía dominar.</p>
+
+        <p><strong>Reflexión:</strong> Me sorprendió descubrir que siempre hay un nivel más profundo de conocimiento por explorar. Esto me motivó a mantener una actitud constante de aprendizaje.</p>
+
+    </div>
+</section>
+
+<footer>
+    © 2024 Axel Díaz - Portafolio Académico
+</footer>
 
 </body>
 </html>
